@@ -10,15 +10,15 @@
   },
   "iteminputs": {
     "0": {
-      "count": 6,
-      "item": "minecraft:sugar_cane"
+      "count": 3,
+      "item": "minecraft:sugar"
     },
     "count": 1
   },
   "output": {
-    "amount": 500,
+    "amount": 1000,
     "fluid": "electrodynamics:fluidethanol"
   },
-  "ticks": 350,
+  "ticks": 300,
   "usagepertick": 10.0
 }

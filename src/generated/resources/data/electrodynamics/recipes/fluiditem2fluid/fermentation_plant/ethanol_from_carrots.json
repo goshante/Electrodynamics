@@ -10,15 +10,15 @@
   },
   "iteminputs": {
     "0": {
-      "count": 12,
+      "count": 9,
       "tag": "forge:crops/carrot"
     },
     "count": 1
   },
   "output": {
-    "amount": 100,
+    "amount": 200,
     "fluid": "electrodynamics:fluidethanol"
   },
-  "ticks": 2000,
-  "usagepertick": 20.0
+  "ticks": 200,
+  "usagepertick": 10.0
 }

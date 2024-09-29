@@ -10,15 +10,15 @@
   },
   "iteminputs": {
     "0": {
-      "count": 11,
+      "count": 9,
       "tag": "forge:mushrooms"
     },
     "count": 1
   },
   "output": {
-    "amount": 100,
+    "amount": 150,
     "fluid": "electrodynamics:fluidethanol"
   },
-  "ticks": 2000,
-  "usagepertick": 20.0
+  "ticks": 400,
+  "usagepertick": 10.0
 }

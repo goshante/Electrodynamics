@@ -36,7 +36,7 @@ import net.minecraftforge.fluids.capability.templates.FluidTank;
 
 public class TileCombustionChamber extends GenericMaterialTile implements IElectricGenerator, ITickableSound {
 
-	public static final int TICKS_PER_MILLIBUCKET = 200;
+	public static final int TICKS_PER_MILLIBUCKET = 250;
 	public static final int TANK_CAPACITY = 1000;
 	public Property<Boolean> running = property(new Property<>(PropertyType.Boolean, "running", false));
 	public Property<Integer> burnTime = property(new Property<>(PropertyType.Integer, "burnTime", 0));
