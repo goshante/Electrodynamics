@@ -13,6 +13,7 @@ import electrodynamics.datagen.utils.recipe.AbstractRecipeGenerator;
 import electrodynamics.datagen.utils.recipe.FinishedRecipeItemOutput;
 import electrodynamics.registers.ElectrodynamicsItems;
 import net.minecraft.data.recipes.FinishedRecipe;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.common.Tags;
@@ -32,10 +33,17 @@ public class ElectrodynamicsWireMillRecipes extends AbstractRecipeGenerator {
 		this(References.ID);
 	}
 
+	private static ItemStack makeItemStack(Item item, int count)
+	{
+		ItemStack stack = new ItemStack(item);
+		stack.setCount(count);
+		return stack;
+	}
+
 	@Override
 	public void addRecipes(Consumer<FinishedRecipe> consumer) {
 
-		newRecipe(new ItemStack(WIRES[SubtypeWire.copper.ordinal()]), 0.1F, 200, 125.0, "copper_wire_from_ingot")
+		newRecipe(makeItemStack(WIRES[SubtypeWire.copper.ordinal()], 4), 0.1F, 200, 125.0, "copper_wire_from_ingot")
 				//
 				.addItemTagInput(Tags.Items.INGOTS_COPPER, 1)
 				//
@@ -43,7 +51,7 @@ public class ElectrodynamicsWireMillRecipes extends AbstractRecipeGenerator {
 				//
 				.complete(consumer);
 
-		newRecipe(new ItemStack(WIRES[SubtypeWire.gold.ordinal()]), 0.2F, 200, 125.0, "gold_wire_from_ingot")
+		newRecipe(makeItemStack(WIRES[SubtypeWire.gold.ordinal()], 4), 0.2F, 200, 125.0, "gold_wire_from_ingot")
 				//
 				.addItemTagInput(Tags.Items.INGOTS_GOLD, 1)
 				//
@@ -51,7 +59,7 @@ public class ElectrodynamicsWireMillRecipes extends AbstractRecipeGenerator {
 				//
 				.complete(consumer);
 
-		newRecipe(new ItemStack(WIRES[SubtypeWire.iron.ordinal()]), 0.1F, 200, 125.0, "iron_wire_from_ingot")
+		newRecipe(makeItemStack(WIRES[SubtypeWire.iron.ordinal()], 4), 0.1F, 200, 125.0, "iron_wire_from_ingot")
 				//
 				.addItemTagInput(Tags.Items.INGOTS_IRON, 1)
 				//
@@ -59,7 +67,7 @@ public class ElectrodynamicsWireMillRecipes extends AbstractRecipeGenerator {
 				//
 				.complete(consumer);
 
-		newRecipe(new ItemStack(WIRES[SubtypeWire.silver.ordinal()]), 0.1F, 200, 125.0, "silver_wire_from_ingot")
+		newRecipe(makeItemStack(WIRES[SubtypeWire.silver.ordinal()], 4), 0.1F, 200, 125.0, "silver_wire_from_ingot")
 				//
 				.addItemTagInput(ElectrodynamicsTags.Items.INGOT_SILVER, 1)
 				//
@@ -67,7 +75,7 @@ public class ElectrodynamicsWireMillRecipes extends AbstractRecipeGenerator {
 				//
 				.complete(consumer);
 
-		newRecipe(new ItemStack(WIRES[SubtypeWire.superconductive.ordinal()]), 0.1F, 200, 125.0, "superconductive_wire_from_ingot")
+		newRecipe(makeItemStack(WIRES[SubtypeWire.superconductive.ordinal()], 4), 0.1F, 200, 125.0, "superconductive_wire_from_ingot")
 				//
 				.addItemTagInput(ElectrodynamicsTags.Items.INGOT_SUPERCONDUCTIVE, 1)
 				//
@@ -75,7 +83,7 @@ public class ElectrodynamicsWireMillRecipes extends AbstractRecipeGenerator {
 				//
 				.complete(consumer);
 
-		newRecipe(new ItemStack(WIRES[SubtypeWire.tin.ordinal()]), 0.1F, 200, 125.0, "tin_wire_from_ingot")
+		newRecipe(makeItemStack(WIRES[SubtypeWire.tin.ordinal()], 4), 0.1F, 200, 125.0, "tin_wire_from_ingot")
 				//
 				.addItemTagInput(ElectrodynamicsTags.Items.INGOT_TIN, 1)
 				//
@@ -83,7 +91,7 @@ public class ElectrodynamicsWireMillRecipes extends AbstractRecipeGenerator {
 				//
 				.complete(consumer);
 
-		newRecipe(new ItemStack(ElectrodynamicsItems.ITEM_TITANIUM_COIL.get()), 0.1F, 200, 125.0, "titanium_coil")
+		newRecipe(makeItemStack(ElectrodynamicsItems.ITEM_TITANIUM_COIL.get(), 1), 0.1F, 200, 125.0, "titanium_coil")
 				//
 				.addItemTagInput(ElectrodynamicsTags.Items.INGOT_TITANIUM, 9)
 				//
