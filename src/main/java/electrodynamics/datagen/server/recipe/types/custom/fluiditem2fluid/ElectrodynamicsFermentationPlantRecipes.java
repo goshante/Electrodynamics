@@ -33,7 +33,7 @@ public class ElectrodynamicsFermentationPlantRecipes extends AbstractRecipeGener
 	@Override
 	public void addRecipes(Consumer<FinishedRecipe> consumer) {
 
-		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 100), 0, 2000, 20.0, "ethanol_from_carrots")
+		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 200), 0, 1000, 20.0, "ethanol_from_carrots")
 				//
 				.addFluidTagInput(FluidTags.WATER, 1000)
 				//
@@ -41,7 +41,7 @@ public class ElectrodynamicsFermentationPlantRecipes extends AbstractRecipeGener
 				//
 				.complete(consumer);
 
-		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 100), 0, 2000, 20.0, "ethanol_from_melon_slices")
+		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 300), 0, 1000, 20.0, "ethanol_from_melon_slices")
 				//
 				.addFluidTagInput(FluidTags.WATER, 1000)
 				//
@@ -49,7 +49,7 @@ public class ElectrodynamicsFermentationPlantRecipes extends AbstractRecipeGener
 				//
 				.complete(consumer);
 
-		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 100), 0, 2000, 20.0, "ethanol_from_mushrooms")
+		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 150), 0, 2000, 20.0, "ethanol_from_mushrooms")
 				//
 				.addFluidTagInput(FluidTags.WATER, 1000)
 				//
@@ -57,7 +57,7 @@ public class ElectrodynamicsFermentationPlantRecipes extends AbstractRecipeGener
 				//
 				.complete(consumer);
 
-		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 100), 0, 2000, 20.0, "ethanol_from_potatos")
+		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 400), 0, 800, 20.0, "ethanol_from_potatos")
 				//
 				.addFluidTagInput(FluidTags.WATER, 1000)
 				//
@@ -65,7 +65,7 @@ public class ElectrodynamicsFermentationPlantRecipes extends AbstractRecipeGener
 				//
 				.complete(consumer);
 
-		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 100), 0, 2000, 20.0, "ethanol_from_pumpkins")
+		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 100), 0, 1750, 20.0, "ethanol_from_pumpkins")
 				//
 				.addFluidTagInput(FluidTags.WATER, 1000)
 				//
@@ -73,7 +73,7 @@ public class ElectrodynamicsFermentationPlantRecipes extends AbstractRecipeGener
 				//
 				.complete(consumer);
 
-		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 100), 0, 2000, 20.0, "ethanol_from_seeds")
+		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 300), 0, 1000, 20.0, "ethanol_from_seeds")
 				//
 				.addFluidTagInput(FluidTags.WATER, 1000)
 				//
@@ -81,7 +81,7 @@ public class ElectrodynamicsFermentationPlantRecipes extends AbstractRecipeGener
 				//
 				.complete(consumer);
 
-		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 100), 0, 2000, 20.0, "ethanol_from_sugar_cane")
+		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 500), 0, 1750, 20.0, "ethanol_from_sugar_cane")
 				//
 				.addFluidTagInput(FluidTags.WATER, 1000)
 				//
@@ -89,7 +89,15 @@ public class ElectrodynamicsFermentationPlantRecipes extends AbstractRecipeGener
 				//
 				.complete(consumer);
 
-		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 100), 0, 2000, 20.0, "ethanol_from_wheat")
+		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 1000), 0, 1500, 20.0, "ethanol_from_sugar_cane")
+				//
+				.addFluidTagInput(FluidTags.WATER, 1000)
+				//
+				.addItemStackInput(new ItemStack(Items.SUGAR, 9))
+				//
+				.complete(consumer);
+
+		newRecipe(new FluidStack(ElectrodynamicsFluids.fluidEthanol, 300), 0, 800, 20.0, "ethanol_from_wheat")
 				//
 				.addFluidTagInput(FluidTags.WATER, 1000)
 				//

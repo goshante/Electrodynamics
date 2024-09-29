@@ -193,19 +193,3 @@ publishing {
         }
     }
 }
-
-tasks.curseforge.dependsOn jar
-
-curseforge {
-  apiKey = System.getenv("CURSEFORGE_KEY")
-  project {
-    id = '316867'
-    changelog = 'You can find changelog at: https://aurilis.dev/'
-    releaseType = 'release'
-    addGameVersion "${minecraft_version}"
-
-    mainArtifact(jar) {
-      displayName=project.name+" ${electrodynamics_version}"
-    }
-  }
-}
